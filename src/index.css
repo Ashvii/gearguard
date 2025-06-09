@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+#auth{
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/29/09/32/auto-1868726_1280.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
