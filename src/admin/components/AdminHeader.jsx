@@ -48,7 +48,7 @@ function AdminHeader() {
                         <Link to='/admin-home'><h1 className="cursor-pointer">Home</h1></Link>
                         <Link to='/admin-complaints'><h1 className="cursor-pointer">Complaints</h1></Link>
                         <div className="img"><img src="/images/Logo.png" alt="logo" className="w-12 h-12" /></div>
-                        <Link to='/admin-careers'><h1 className="cursor-pointer">Careers</h1></Link>
+                        {/* <Link to='/admin-careers'><h1 className="cursor-pointer">Careers</h1></Link> */}
                         {
                             !token ?
                                 <Link to='/login'><h1 className="cursor-pointer">Login</h1></Link>
@@ -57,8 +57,8 @@ function AdminHeader() {
                                     <Link to='/'><h1 className="cursor-pointer" onClick={handleLogout}>Logout</h1></Link>
                                 </>
                         }
-
-                        <Link to='/admin-settings'><h1 className="cursor-pointer">Settings</h1></Link>
+{/* 
+                        <Link to='/admin-settings'><h1 className="cursor-pointer">Settings</h1></Link> */}
                     </div>
 
 
@@ -79,7 +79,7 @@ function AdminHeader() {
                 <div className="md:hidden bg-red-800 text-white rounded-lg mx-4 p-4 space-y-2 text-center">
                     <Link to='/'><h1 className="cursor-pointer">Home</h1></Link>
                     <Link to='/admin-complaints'><h1 className="cursor-pointer">Complaints</h1></Link>
-                    <Link to='/admin-careers'><h1 className="cursor-pointer">Careers</h1></Link>
+                    {/* <Link to='/admin-careers'><h1 className="cursor-pointer">Careers</h1></Link> */}
                     {
                         !token ?
                             <Link to='/login'><h1 className="cursor-pointer">Login</h1></Link>
@@ -90,7 +90,7 @@ function AdminHeader() {
 
                             </>
                     }
-                    <Link to='/admin-settings'><h1 className="cursor-pointer">Settings</h1></Link>
+                    {/* <Link to='/admin-settings'><h1 className="cursor-pointer">Settings</h1></Link> */}
 
 
                 </div>

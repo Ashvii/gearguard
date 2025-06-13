@@ -18,7 +18,10 @@ function Home() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl text-red-800 font-bold">Services</h1>
 
             <div className="btn mt-6 flex justify-center">
-              <button className="bg-red-800 rounded-full flex items-center justify-center w-40 p-2 text-white">
+              <button
+                onClick={() => window.location.href = 'tel:9544738979'} // Replace with your number
+                className="bg-red-800 rounded-full flex items-center justify-center w-40 p-2 text-white"
+              >
                 <FontAwesomeIcon icon={faPhone} className="text-black text-xl mr-2" />
                 Call Now
               </button>
@@ -45,9 +48,12 @@ function Home() {
               back on the road, we ensure quality, transparency, and a customer-first approach.
             </p>
 
-            <button className="mt-4 bg-red-800 text-white px-6 py-2 rounded-full text-lg flex items-center gap-2 mx-auto md:mx-0">
-              <FontAwesomeIcon icon={faPhone} className="text-black" />
-              Call now
+            <button
+              onClick={() => window.location.href = 'tel:9544738979'} // Replace with your number
+              className="bg-red-800 rounded-full flex items-center justify-center w-40 p-2 text-white"
+            >
+              <FontAwesomeIcon icon={faPhone} className="text-black text-xl mr-2" />
+              Call Now
             </button>
           </div>
 

@@ -19,6 +19,8 @@ function AdminComplaints() {
 
   const [allusers, setAllusers] = useState([])
 
+  // const [filter, setFilter] = useState(false)
+
 
 
 
@@ -79,9 +81,27 @@ function AdminComplaints() {
 
         <div>
           <h1 className='text-3xl font-bold text-center my-5'>All Complaints</h1>
+{/* 
+          <button
+            className="filter border rounded bg-red-800 flex justify-center items-center px-3 py-3 mx-10 text-white"
+            onClick={() => setFilter(prev => !prev)}// toggle dropdown
+          >
+            Filter
+          </button>
+
+          {filter && (
+            <div className="dropdown mx-10 mt-2 bg-white shadow-md rounded w-40">
+              <p className='rounded bg-red-800 text-white px-3 py-2 cursor-pointer hover:bg-red-700 my-2'>Breakdown</p>
+              <p className='rounded bg-red-800 text-white px-3 py-2 cursor-pointer hover:bg-red-700 my-2'>Repair</p>
+              <p className='rounded bg-red-800 text-white px-3 py-2 cursor-pointer hover:bg-red-700 my-2'>Battery</p>
+            </div>
+          )} */}
+
+
+
           {/* tab */}
           <div className='flex justify-center items-center my-5'>
-            <p onClick={() => { setcomplaintstatus(true), setusersstatus(false) }} className={complaintstatus ? 'p-4 text-blue-600 rounded border-t border-r border-gray-200 cursor-pointer' : 'p-4 text-black rounded border-t border-r border-gray-200 cursor-pointer'}>Book List</p>
+            <p onClick={() => { setcomplaintstatus(true), setusersstatus(false) }} className={complaintstatus ? 'p-4 text-blue-600 rounded border-t border-r border-gray-200 cursor-pointer' : 'p-4 text-black rounded border-t border-r border-gray-200 cursor-pointer'}>Complaint List</p>
             <p onClick={() => { setcomplaintstatus(false); setusersstatus(true) }} className={usersstatus ? 'p-4 text-blue-600 rounded border-b border-l border-gray-200 cursor-pointer' : 'p-4 text-black rounded border-b border-l border-gray-200 cursor-pointer'}>Users</p>
           </div>
 

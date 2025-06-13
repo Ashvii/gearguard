@@ -36,10 +36,12 @@ function Breakdown() {
 
             if (result.status == 200) {
 
-                
+                setTimeout(() => {
                     toast.success('Complaint Registered successfully');
+                }, 100);
                 
-                
+
+
                 setComplaint({
 
                     fname: "",
@@ -55,7 +57,7 @@ function Breakdown() {
             }
             else if (result.status == 409) {
 
-                // toast.warning('user not found')
+                toast.warning('user not found')
                 setComplaint({
 
                     fname: "",
@@ -69,7 +71,7 @@ function Breakdown() {
             }
             else {
 
-                // toast.error('Something went wrong')
+                toast.error('Something went wrong')
                 setComplaint({
 
                     fname: "",
@@ -234,7 +236,7 @@ function Breakdown() {
                 </section>
             </div>
 
-            <ToastContainer theme="colored" position="top-center" autoClose="false" />
+            <ToastContainer theme="colored" position="top-center" autoClose={2000} />
 
         </div>
     )

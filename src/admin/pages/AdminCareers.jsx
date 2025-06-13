@@ -16,6 +16,7 @@ import { toast } from 'react-toastify';
 // import { serverurl } from '../../services/serverUrl';
 
 function AdminCareers() {
+
   const [jobpostStatus, setjobpostStatus] = useState(true)
 
   const [viewapplicationStatus, setviewapplicationStatus] = useState(false)
@@ -24,14 +25,12 @@ function AdminCareers() {
 
   const [modalStatus, setModalStatus] = useState(false)
 
-
-
-
   const [addStatus, setAddStatus] = useState({})
 
   const [JobDetails, setJobDetails] = useState({
     title: "", location: "", jtype: "", salary: "", qualification: "", experience: "", discription: ""
   })
+
 
   const [Alljobs, setAllJobs] = useState([])
 
@@ -48,7 +47,7 @@ function AdminCareers() {
       <AdminHeader />
       <div className='md:grid grid-cols-[1fr_4fr]'>
         <div className='bg-blue-100 flex flex-col items-center p-5'>
-          <AdminSidebar />
+
         </div>
         <div>
           <h1 className='text-3xl font-bold text-center my-5'>Careers</h1>
