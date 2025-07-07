@@ -3,6 +3,7 @@ import Header from '../User/Components/Header'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { complaintApi } from '../Api Services/AllApi';
+import Footer from '../User/Components/Footer';
 
 
 function Breakdown() {
@@ -237,6 +238,8 @@ function Breakdown() {
             </div>
 
             <ToastContainer theme="colored" position="top-center" autoClose={2000} />
+
+        <Footer/>
 
         </div>
     )

@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Components/Header';
 import { Link } from "react-router-dom";
+import Footer from '../Components/Footer';
 
 function OurServices() {
     const token = sessionStorage.getItem("token");
@@ -50,6 +51,8 @@ function OurServices() {
                     </Link>
                 </div>
             )}
+
+            <Footer/>
         </div>
     );
 }

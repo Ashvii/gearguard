@@ -9,31 +9,31 @@ import "react-toastify/dist/ReactToastify.css";
 function AdminHeader() {
 
     const [menuOpen, setMenuOpen] = useState(false);
-    
-      const [token, settoken] = useState("")
-    
-      const navigate = useNavigate();
-    
-      console.log(token);
-    
-      const handleLogout = () => {
+
+    const [token, settoken] = useState("")
+
+    const navigate = useNavigate();
+
+    console.log(token);
+
+    const handleLogout = () => {
         sessionStorage.removeItem("token");
         sessionStorage.removeItem("");
         toast.success("Logged out successfully");
         navigate("/");
-      };
+    };
 
-     useEffect(() => {
-    
+    useEffect(() => {
+
         if (sessionStorage.getItem("token")) {
-    
-          const token = sessionStorage.getItem("token")
-          settoken(token)
-    
+
+            const token = sessionStorage.getItem("token")
+            settoken(token)
+
         }
-    
-    
-      }, [])
+
+
+    }, [])
 
 
     return (
@@ -57,8 +57,9 @@ function AdminHeader() {
                                     <Link to='/'><h1 className="cursor-pointer" onClick={handleLogout}>Logout</h1></Link>
                                 </>
                         }
-{/* 
+                        {/* 
                         <Link to='/admin-settings'><h1 className="cursor-pointer">Settings</h1></Link> */}
+                        <Link to={'/admin-careers'}><h1>Careers</h1></Link>
                     </div>
 
 
@@ -101,7 +102,7 @@ function AdminHeader() {
             </marquee>
 
 
-<ToastContainer theme="colored" position="top-center" autoClose={2000} />
+            <ToastContainer theme="colored" position="top-center" autoClose={2000} />
         </>
     )
 }

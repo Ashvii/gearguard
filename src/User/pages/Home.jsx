@@ -3,6 +3,8 @@ import React from 'react';
 import Header from '../Components/Header'
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from "react-router-dom";
+import Footer from '../Components/Footer';
+
 
 function Home() {
   return (
@@ -131,12 +133,20 @@ function Home() {
         </h3>
       </section>
 
+      <section className="flex flex-col items-center justify-center px-4 py-8">
+        <div className="w-full max-w-5xl aspect-video relative">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251479.49747840138!2d76.13730642420359!3d9.986500064936651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1750686405617!5m2!1sen!2sin"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Kochi Map"
+            className="absolute top-0 left-0 w-full h-full border-0"
+          ></iframe>
+        </div>
+      </section>
 
-
-
-
-
-
+      <Footer />
 
     </>
   );

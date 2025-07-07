@@ -3,6 +3,7 @@ import Header from '../User/Components/Header'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { complaintApi } from '../Api Services/AllApi';
+import Footer from '../User/Components/Footer';
 
 function FlatTyre() {
 
@@ -154,6 +155,8 @@ function FlatTyre() {
                     </div>
                 </div>
             </div>
+
+            <Footer/>
 
             
 

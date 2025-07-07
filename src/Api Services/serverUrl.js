@@ -1,1 +1,2 @@
-export const serverUrl = 'https://gearguard-backend.onrender.com'
+
+export const serverUrl = 'http://localhost:4000'

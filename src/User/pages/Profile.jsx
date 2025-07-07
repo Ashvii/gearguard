@@ -2,6 +2,7 @@ import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import EditProfile from '../Components/EditProfile'
+import Footer from '../Components/Footer'
 
 function Profile() {
   const [regComplaint, setregComplaint] = useState(true)
@@ -138,6 +139,8 @@ function Profile() {
           </div>}
 
       </div>
+
+      <Footer/>
 
 
     </div>

@@ -14,6 +14,8 @@ import AdminCareers from  '../src/admin/pages/AdminCareers'
 
 import AdminSettings from  '../src/admin/pages/AdminSettings'
 import AdminComplaints from  '../src/admin/pages/AdminComplaints'
+import Usercareer from './User/pages/Usercareer'
+import Careers from './User/pages/Careers'
 
 function App() {
 
@@ -27,11 +29,14 @@ function App() {
         <Route path='/OurServices' element={<OurServices />} />
         <Route path='/Breakdown' element={<Breakdown />} />
         <Route path='/Repair' element={<Repair />} />
+        <Route path='/careers' element={<Careers/>}/>
 
         <Route path='/FlatTyre' element={<FlatTyre/>} />
 
         <Route path='/login' element={<Auth/>} />
         <Route path='/register' element={<Auth register />} />
+
+
 
         <Route path='/admin-home' element={<AdminHome />} />
         <Route path='/admin-complaints' element={<AdminComplaints />} />

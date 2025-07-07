@@ -48,7 +48,16 @@ function Header() {
           <div className="icons hidden md:flex items-center gap-x-8 text-sm md:text-base">
             <Link to='/'><h1 className="cursor-pointer">Home</h1></Link>
             <Link to='/AboutUs'><h1 className="cursor-pointer">About Us</h1></Link>
+            <Link to='/careers'><h1 className="cursor-pointer">Careers</h1></Link>
+
+
             <div className="img"><img src="/images/Logo.png" alt="logo" className="w-12 h-12" /></div>
+
+
+            <Link to={'/careers'}>
+              <h1 className="cursor-pointer">Join Us</h1>
+            </Link>
+
             <Link to='/OurServices'><h1 className="cursor-pointer">Our Services</h1></Link>
             {
               !token ?
@@ -67,9 +76,12 @@ function Header() {
           {/* Hamburger */}
           <FontAwesomeIcon
             icon={faBars}
-            className="block md:hidden text-2xl text-black cursor-pointer"
+            className="block md:hidden text-2xl text-white cursor-pointer"
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle Menu"
+            role="button"
           />
+
         </div>
       </div>
 
@@ -79,6 +91,9 @@ function Header() {
           <Link to='/'><h1 className="cursor-pointer">Home</h1></Link>
           <Link to='/AboutUs'><h1 className="cursor-pointer">About Us</h1></Link>
           <Link to='/OurServices'><h1 className="cursor-pointer">Our Services</h1></Link>
+          <Link to={'/careers'}>
+              <h1 className="cursor-pointer">Join Us</h1>
+            </Link>
           {
             !token ?
               <Link to='/login'><h1 className="cursor-pointer">Login</h1></Link>

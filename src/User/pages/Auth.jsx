@@ -198,21 +198,7 @@ function Auth() {
               </button>
             </div>
 
-            {!register && (
-              <>
-                <p className="text-white text-center mt-3">
-                  ---------------- or ----------------
-                </p>
-                <div className="mb-5 mt-3 w-full">
-                  <button
-                    type="button"
-                    className="bg-white text-black w-full p-3 rounded"
-                  >
-                    Sign In with Google
-                  </button>
-                </div>
-              </>
-            )}
+            
 
             <p className="text-white mt-2">
               {register ? "Already have an account? " : "New user? "}
